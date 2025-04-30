@@ -1,0 +1,337 @@
+
+/* Imported a Custom Font */
+@font-face {
+    font-family: 'Norwester';
+    src: url('/font/norwester.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Format For Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #070F13;
+    font-family: 'Norwester'
+}
+
+/* Header/Nav Bar Section */
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+    padding: 10px 30px;
+    height: 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+/* Nav Bar Logo(Indie Stone) Format */
+.navBar-left .logo {
+    padding: 8px;
+    width: auto;
+    height: 48px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+/* Nav Bar Main Contents Format */
+.navBar-center {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Nav Bar Links Format */
+.navBar-center a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+}
+  
+.navBar-center a:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+}
+/* Special Class for the "Buy Now" Button */
+.buyNow {
+    background: linear-gradient(135deg, #b10d30, #7a0d23);
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+/* Format for overriding the ".navBar-center a:hover" code from above.  */
+.navBar-center .buyNow:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(205, 0, 59, 0.6), 0 0 15px rgba(255, 0, 76, 0.8);
+    background: linear-gradient(135deg, #e6003b, #a20029);
+    transition: all 0.3s ease;
+}
+/* Nav Bar Social Media Images Format */
+.navBar-right {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+/* Format For the Social Media Images */
+.navBar-right a img {
+    height: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+    filter: invert(100%) brightness(100%);
+    transition: all 0.3s ease;
+}
+
+.navBar-right a img:hover {
+    transform: scale(1.2);
+    filter: invert(16%) sepia(84%) saturate(5941%) hue-rotate(358deg) brightness(105%) contrast(124%);
+}
+
+/* Hero Section */
+.heroSection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/imgs/heroBg.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+/* Format for the "Project Zomboid, The Ultimate Survival Rpg" Image */
+.heroLogo {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+/* Call To Action(CTA) Container */
+.ctaContainer {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+ /* Format For the CTA Buttons  */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    padding: 18px 24px;
+    margin: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    background: linear-gradient(to right, #222, #111);
+}
+/* Forum Card */
+.forum {
+    background: linear-gradient(135deg, #39444e, #2c353d);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    width: 320px;
+}
+
+.forum:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(47, 58, 71, 0.6), 0 0 15px rgba(47, 58, 71, 0.8);
+    background: linear-gradient(135deg, #4b5c6d, #36424d);
+  }
+  
+.forumText {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-size: 16px;
+}
+  
+.forum strong {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 4px;
+}
+  
+.forum img {
+    height: 54px;
+    margin-left: 16px;
+}
+/* Steam Card */
+.steam {
+    background: linear-gradient(135deg, #b10d30, #7a0d23);
+}
+
+.steam:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(205, 0, 59, 0.6), 0 0 15px rgba(255, 0, 76, 0.8);
+    background: linear-gradient(135deg, #e6003b, #a20029);
+  }
+
+.steam img{
+    filter: invert(100);
+}
+/* GOG Card */
+.gog {
+    background: linear-gradient(135deg, #5c2c84, #3a1d5a);
+  }
+
+.gog:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(71, 22, 102, 0.6), 0 0 15px rgba(140, 50, 214, 0.8);
+    background: linear-gradient(135deg, #6e29a3, #3e1b5c);
+}
+
+.gog img{
+    filter: invert(100);
+}
+/* Format For The Images in Each Card */
+.button img {
+    height: 48px;
+    margin-left: 16px;
+}
+/* Price Text For Each Card */
+.price {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #ffdddd;
+}
+  
+/* Content Body Section */
+.contentBody {
+    padding: 80px 60px;
+}
+
+/* Features Container */
+.featuresContainer {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+/* Features Card Design */
+.featureCard {
+    background: linear-gradient(135deg, #1b1b1b, #111);
+    padding: 16px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Feature Cards Image Format */
+.featureCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.featureCard h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #ff0000;
+}
+
+.featureCard p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Latest News Section */
+.latestNews {
+    margin-top: 60px;
+}
+/* Latest News Header */
+.latestTitle {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.latestTitle::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #ff0000;
+    margin: 16px auto 0 auto;
+    border-radius: 2px;
+}
+/* Latest News Container */
+.newsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+/* News Card Design */
+.newsCard {
+    background: linear-gradient(135deg, #1b1b1b, #111);
+    padding: 20px;
+    border-radius: 16px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.newsCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+/* News Card Image Format */
+.newsCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.newsCard a {
+    text-decoration: none;
+}
+/* News Card Header */
+.newsCard h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+/* News Card Paragraph Details */
+.newsCard p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+/* News Category and Dates */
+.newsData {
+    font-size: 12px;
+    color: #999;
+}
