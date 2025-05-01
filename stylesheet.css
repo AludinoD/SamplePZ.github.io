@@ -1,4 +1,3 @@
-
 /* Imported a Custom Font */
 @font-face {
     font-family: 'Norwester';
@@ -6,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 /* Format For Body */
 body {
     margin: 0;
@@ -27,6 +27,7 @@ body {
     height: 60px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
+
 /* Nav Bar Logo(Indie Stone) Format */
 .navBar-left .logo {
     padding: 8px;
@@ -40,6 +41,7 @@ body {
 .logo:hover{
     transform: scale(1.2);
 }
+
 /* Nav Bar Main Contents Format */
 .navBar-center {
     display: flex;
@@ -50,6 +52,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* Nav Bar Links Format */
 .navBar-center a {
     color: white;
@@ -63,6 +66,7 @@ body {
     color: #ff0000;
     transform: scale(1.2);
 }
+
 /* Special Class for the "Buy Now" Button */
 .buyNow {
     background: linear-gradient(135deg, #b10d30, #7a0d23);
@@ -70,6 +74,7 @@ body {
     border-radius: 8px;
     transition: all 0.3s ease;
 }
+
 /* Format for overriding the ".navBar-center a:hover" code from above.  */
 .navBar-center .buyNow:hover {
     background-color: rgb(255, 0, 0);
@@ -79,12 +84,14 @@ body {
     background: linear-gradient(135deg, #e6003b, #a20029);
     transition: all 0.3s ease;
 }
+
 /* Nav Bar Social Media Images Format */
 .navBar-right {
     display: flex;
     align-items: center;
     padding: 8px;
 }
+
 /* Format For the Social Media Images */
 .navBar-right a img {
     height: 24px;
@@ -99,6 +106,7 @@ body {
     filter: invert(16%) sepia(84%) saturate(5941%) hue-rotate(358deg) brightness(105%) contrast(124%);
 }
 
+
 /* Hero Section */
 .heroSection {
     position: relative;
@@ -112,6 +120,7 @@ body {
     justify-content: center;
     overflow: hidden;
   }
+
 /* Format for the "Project Zomboid, The Ultimate Survival Rpg" Image */
 .heroLogo {
     display: block;
@@ -120,6 +129,7 @@ body {
     height: auto;
     margin-bottom: 80px;
 }
+
 /* Call To Action(CTA) Container */
 .ctaContainer {
     display: flex;
@@ -128,6 +138,7 @@ body {
     flex-wrap: wrap;
     margin-top: 16px;
 }
+
  /* Format For the CTA Buttons  */
 .button {
     display: flex;
@@ -144,6 +155,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     background: linear-gradient(to right, #222, #111);
 }
+
 /* Forum Card */
 .forum {
     background: linear-gradient(135deg, #39444e, #2c353d);
@@ -174,9 +186,10 @@ body {
 }
   
 .forum img {
-    height: 54px;
+    height: 64px;
     margin-left: 16px;
 }
+
 /* Steam Card */
 .steam {
     background: linear-gradient(135deg, #b10d30, #7a0d23);
@@ -191,6 +204,7 @@ body {
 .steam img{
     filter: invert(100);
 }
+
 /* GOG Card */
 .gog {
     background: linear-gradient(135deg, #5c2c84, #3a1d5a);
@@ -205,11 +219,13 @@ body {
 .gog img{
     filter: invert(100);
 }
+
 /* Format For The Images in Each Card */
 .button img {
     height: 48px;
     margin-left: 16px;
 }
+
 /* Price Text For Each Card */
 .price {
     display: block;
@@ -219,6 +235,7 @@ body {
     color: #ffdddd;
 }
   
+
 /* Content Body Section */
 .contentBody {
     padding: 80px 60px;
@@ -229,8 +246,10 @@ body {
     display: flex;
     justify-content: center;
     gap: 60px;
+    margin-top: 80px;
     margin-bottom: 100px;
 }
+
 /* Features Card Design */
 .featureCard {
     background: linear-gradient(135deg, #1b1b1b, #111);
@@ -256,6 +275,17 @@ body {
     color: #ff0000;
 }
 
+.featureCard h2::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ff0000;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 2px;
+}
+
 .featureCard p {
     font-size: 16px;
     color: #ccc;
@@ -263,8 +293,9 @@ body {
 
 /* Latest News Section */
 .latestNews {
-    margin-top: 60px;
+    margin-top: 80px;
 }
+
 /* Latest News Header */
 .latestTitle {
     font-size: 36px;
@@ -283,6 +314,7 @@ body {
     margin: 16px auto 0 auto;
     border-radius: 2px;
 }
+
 /* Latest News Container */
 .newsContainer {
     display: flex;
@@ -290,6 +322,7 @@ body {
     gap: 60px;
     flex-wrap: wrap;
 }
+
 /* News Card Design */
 .newsCard {
     background: linear-gradient(135deg, #1b1b1b, #111);
@@ -306,6 +339,7 @@ body {
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.5);
     cursor: pointer;
 }
+
 /* News Card Image Format */
 .newsCard img {
     width: 100%;
@@ -320,18 +354,101 @@ body {
 }
 /* News Card Header */
 .newsCard h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     color: #ff0000;
 }
+
+/* News Card Header Line */
+.newsCard h3::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ff0000;
+    border-radius: 2px;
+    margin-top: 2px;
+}
+
 /* News Card Paragraph Details */
 .newsCard p {
     font-size: 14px;
     color: #ffffff;
     margin-bottom: 16px;
 }
+
 /* News Category and Dates */
 .newsData {
     font-size: 12px;
-    color: #999;
+    color: #909090;
+}
+
+/* Footer Section */
+footer {
+    margin-top: 80px;
+    background-color: #000;
+    padding: 40px 60px;
+}
+  
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footerColumn {
+    flex: 1 1 180px;
+}
+  
+.footerColumn h3 {
+    color: red;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+  
+.footerColumn a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+  
+.footerColumn a:hover {
+    color: red;
+}
+  
+.spiffoSection img {
+    margin-top: 20px;
+    height: 164px;
+    cursor: pointer;
+}
+  
+.socialRow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+  
+.socialRow a img {
+    height: 24px;
+    width: 24px;
+    filter: invert(100) brightness(100);
+    transition: all 0.3s ease
+}
+
+.socialRow a img:hover{
+    transform: scale(1.2);
+    filter: invert(16%) sepia(84%) saturate(5941%) hue-rotate(358deg) brightness(105%) contrast(124%);
+}
+  
+.creditsRow {
+    color: white;
+    width: 100%;
+    font-size: 16px;
 }
