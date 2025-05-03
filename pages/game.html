@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Zomboid Website</title>
-    <link rel="shortcut icon" href="/imgs/spiffoLogo.png" type="image/x-icon">
-    <link rel="icon" href="/imgs/spiffoLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Game</title>
+  <link rel="shortcut icon" href="../imgs/spiffoLogo.png" type="image/x-icon">
+  <link rel="icon" href="../imgs/spiffoLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../stylesheet.css">
 </head>
   <body>
-    <!-- The header has 3 divs because it contains the logo(left) main navBar contents(middle) and social icons(right) -->
+        <!-- The header has 3 divs because it contains the logo(left) main navBar contents(middle) and social icons(right) -->
     <!-- This div serves as the container for all those divs -->
     <header class="navBar">
       <!-- navBar Left is For The Logo -->
       <div class="navBar-left">
         <a href="#home">
-          <img src="/imgs/indiestoneLogo.png" alt="Indie Stone Logo" class="logo">
+          <img src="../imgs/indiestoneLogo.png" alt="Indie Stone Logo" class="logo">
         </a>
       </div>
       <!-- Main navBar Contents -->
@@ -30,22 +30,62 @@
       <!-- navBar Right for Social Icons -->
       <div class="navBar-right">
         <a href="https://www.reddit.com/r/projectzomboid/" target="_blank">
-          <img src="/imgs/redditIcon.svg" alt="Reddit">
+          <img src="../imgs/redditIcon.svg" alt="Reddit">
         </a>
         <a href="https://store.steampowered.com/app/108600/Project_Zomboid/" target="_blank">
-          <img src="/imgs/steamIcon.svg" alt="Steam">
+          <img src="../imgs/steamIcon.svg" alt="Steam">
         </a>
         <a href="https://www.facebook.com/profile.php?id=100063646957274" target="_blank">
-          <img src="/imgs/facebookIcon.svg" alt="Facebook">
+          <img src="../imgs/facebookIcon.svg" alt="Facebook">
         </a>
         <a href="https://discord.com/invite/0lGvMrCiUWbasJFh" target="_blank"> 
-          <img src="/imgs/discordIcon.svg" alt="Discord">
+          <img src="../imgs/discordIcon.svg" alt="Discord">
         </a>
         <a href="https://www.youtube.com/user/theindiestone" target="_blank">
-          <img src="/imgs/youtubeIcon.svg" alt="YouTube">
+          <img src="../imgs/youtubeIcon.svg" alt="YouTube">
         </a>
         <a href="https://x.com/theindiestone" target="_blank"> 
-          <img src="/imgs/twitterIcon.svg" alt="Twitter">
+          <img src="../imgs/twitterIcon.svg" alt="Twitter">
         </a>
       </div>    
     </header>
+
+    <!-- Hero Banner for the Game Section -->
+    <div class="gameHero">
+      <div class="heroBanner">
+        <img src="../imgs/Game Banner.png" alt="Game Banner" class="heroImg">
+        <h1 class="gameTitle">The Game Features</h1>
+      </div>
+    </div>
+
+  <!-- Game Video  -->
+    <section class="gameVideo">
+      <!-- Embedded YouTube Trailer -->
+      <div class="videoContainer">
+        <iframe width="560" height="315" 
+        src="https://www.youtube-nocookie.com/embed/nPbsDmzZ3Oc?si=9CrtJ1uC3hczwUjv" 
+        title="YouTube video player" 
+        frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- CTA Buy Buttons -->
+      <div class="ctaContainer">
+        <!-- Steam Button -->
+        <a href="https://store.steampowered.com/app/108600/Project_Zomboid/" target="_blank" class="button steam">
+          <span>BUY ON STEAM<span class="price">£16.75</span></span>
+          <img src="../imgs/steamIcon.svg" alt="Steam Icon">
+        </a>
+        <!-- GoG Button -->
+        <a href="https://www.gog.com/en/game/project_zomboid" target="_blank" class="button gog">
+          <span>BUY ON GOG<span class="price">£16.75</span></span>
+          <img src="../imgs/gogIcon.svg" alt="GOG Icon">
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
