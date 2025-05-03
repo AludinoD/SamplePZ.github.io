@@ -1,7 +1,7 @@
 /* Imported a Custom Font */
 @font-face {
     font-family: 'Norwester';
-    src: url('/font/norwester.otf') format('truetype');
+    src: url('./font/norwester.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
