@@ -596,7 +596,7 @@ footer {
 /* Features Section */
 /* Feature Heading Text Style */
 .featuresHeading {
-    font-size: 40px;
+    font-size: 48px;
     color: #ff0000;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -847,3 +847,91 @@ footer {
 
 
 /* <---------------------------------------------------------------Reviews Page--------------------------------------------------------------------> */
+.reviewsSection {
+    max-width: 1100px;
+    margin:auto;
+    padding: 20px;
+    color: #ffffff;
+}
+  
+.reviewsTitle {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 40px;
+    color: #ff0000;
+    letter-spacing: 1px;
+}
+
+.reviewsTitle::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 4px;
+    background: #ff0000;
+    margin: 16px auto 0 auto;
+    border-radius: 2px;
+}
+  
+.reviewsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+  
+.reviewCard {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+}
+  
+.reviewCard:hover {
+    box-shadow: 0 13px 25px rgba(255, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+  
+.reviewTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+  
+.reviewRating {
+    font-size: 24px;
+    color: #f7c600;
+    margin-bottom: 15px;
+}
+  
+.reviewText {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Reviews Button*/
+.moreReviewsBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+/* Button Format for the Reviews */
+.reviewsBtn{
+    background: linear-gradient(135deg, #b10d30, #7a0d23);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Reviews Button Hover Effect */
+.reviewsBtn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(255, 0, 0, 0.4);
+    color: #000000;
+}
