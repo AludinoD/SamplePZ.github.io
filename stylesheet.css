@@ -1,3 +1,7 @@
+/* Sections will be seperated for easier viewing and understandability. */
+/* All pages only share only one stylesheet */
+/* There will be common styles that will be shared throughout the whole website. */
+
 /* Imported a Custom Font */
 @font-face {
     font-family: 'Norwester';
@@ -5,7 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
+/* <------------------------------------------------------------------------------------------------------------------------------------------------> */
 /* Format For Body */
 body {
     margin: 0;
@@ -13,7 +17,8 @@ body {
     background-color: #070F13;
     font-family: 'Norwester'
 }
-
+/* <-----------------------------------------------------Nav Bar -------------------------------------------------------------------------> */
+/* A Common Style Code */
 /* Header/Nav Bar Section */
 .navBar {
     position: sticky;
@@ -38,6 +43,7 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Scales the logo when hovered */
 .logo:hover{
     transform: scale(1.2);
 }
@@ -61,15 +67,17 @@ body {
     letter-spacing: 3px;
     transition: all 0.3s ease;
 }
-  
+
+/* Makes the hover effect for the nav bar, however it doesn't show as active until you're in that page */
 .navBar-center a:hover:not(.active) {
     color: #ff0000;
     transform: scale(1.2);
 }
 
+/* Once the page you're in is considered active, the color and size will permanently stay until you switch to another tab */
 .navBar-center a.active{
     color: #ff0000;
-    transform: scale(1.6);
+    transform: scale(1.4);
 }
 
 /* Special Class for the "Buy Now" Button */
@@ -106,13 +114,15 @@ body {
     transition: all 0.3s ease;
 }
 
+/* The Social Icons are svgs, and applying filters is the only way to change their color. */
 .navBar-right a img:hover {
     transform: scale(1.2);
     filter: invert(16%) sepia(84%) saturate(5941%) hue-rotate(358deg) brightness(105%) contrast(124%);
 }
 
-
+/* <--------------------------------------------------------------Home Page----------------------------------------------------------------------> */
 /* Hero Section */
+/* This is the hero section background */
 .heroSection {
     position: relative;
     width: 100%;
@@ -124,7 +134,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-  }
+}
 
 /* Format for the "Project Zomboid, The Ultimate Survival Rpg" Image */
 .heroLogo {
@@ -171,25 +181,28 @@ body {
     width: 320px;
 }
 
+/* Forum Card Hover effect */
 .forum:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(47, 58, 71, 0.6), 0 0 15px rgba(47, 58, 71, 0.8);
     background: linear-gradient(135deg, #4b5c6d, #36424d);
-  }
-  
+}
+
+/* Forum Card Text format */
 .forumText {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
     font-size: 16px;
 }
-  
+
+/* Forum Card Text(Bold) format */
 .forum strong {
     font-size: 24px;
     font-weight: 800;
     margin-top: 4px;
 }
-  
+/* Forum Card Image(Spiffo) format */
 .forum img {
     height: 64px;
     margin-left: 16px;
@@ -200,12 +213,14 @@ body {
     background: linear-gradient(135deg, #b10d30, #7a0d23);
 }
 
+/* Steam Card Hover Effect */
 .steam:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(205, 0, 59, 0.6), 0 0 15px rgba(255, 0, 76, 0.8);
     background: linear-gradient(135deg, #e6003b, #a20029);
-  }
+}
 
+/* Steam Card Color Invert */
 .steam img{
     filter: invert(100);
 }
@@ -213,14 +228,16 @@ body {
 /* GOG Card */
 .gog {
     background: linear-gradient(135deg, #5c2c84, #3a1d5a);
-  }
+}
 
+/* GOG Card Hover Effect */
 .gog:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(71, 22, 102, 0.6), 0 0 15px rgba(140, 50, 214, 0.8);
     background: linear-gradient(135deg, #6e29a3, #3e1b5c);
 }
 
+/* GOG Card Color Invert */
 .gog img{
     filter: invert(100);
 }
@@ -239,7 +256,6 @@ body {
     margin-top: 8px;
     color: #ffdddd;
 }
-  
 
 /* Content Body Section */
 .contentBody {
@@ -249,9 +265,9 @@ body {
 /* Features Container */
 .featuresContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-top: 80px;
     margin-bottom: 100px;
 }
 
@@ -264,8 +280,10 @@ body {
     text-align: center;
     box-shadow: 0 8px 16px rgba(0,0,0,0.6);
     transition: all 0.3s ease;
+ 
 }
 
+/* Feature Card Hover Effect */
 .featureCard:hover{
     transform: translateY(-4px);
 }
@@ -277,12 +295,14 @@ body {
     object-fit: cover;
 }
 
+/* Feature Card Header Style */
 .featureCard h2 {
     font-size: 24px;
     margin-bottom: 8px;
     color: #ff0000;
 }
 
+/* The Line under the header */
 .featureCard h2::after{
     content: "";
     display: block;
@@ -294,6 +314,7 @@ body {
     border-radius: 2px;
 }
 
+/* Feature Card paragraph style */
 .featureCard p {
     font-size: 16px;
     padding: 0 16px 16px 16px;
@@ -313,20 +334,21 @@ body {
     margin-bottom: 40px;
     position: relative;
 }
-
+/* Line Under the Header */
 .latestTitle::after {
     content: "";
     display: block;
     width: 120px;
     height: 4px;
     background: #ff0000;
-    margin: 16px auto 0 auto;
+    margin: 8px auto 0 auto;
     border-radius: 2px;
 }
 
 /* Latest News Container */
 .newsContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
@@ -336,11 +358,13 @@ body {
     background: linear-gradient(135deg, #1b1b1b, #111);
     border-radius: 16px;
     width: 30%;
+    overflow: hidden;
     text-align: left;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
 }
 
+/* News Card Hover Effect */
 .newsCard:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
@@ -353,9 +377,11 @@ body {
     object-fit: cover;
 }
 
+/* The entire card is a link, this doesn't show the blue underline or the link effect */
 .newsCard a {
     text-decoration: none;
 }
+
 /* News Card Header */
 .newsCard h3 {
     padding: 8px;
@@ -397,6 +423,7 @@ body {
     margin-top: 60px;
 }
 
+/* Button Format for the see more  */
 .seeMoreBtn {
     background: linear-gradient(135deg, #b10d30, #7a0d23);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
@@ -408,19 +435,22 @@ body {
     transition: all 0.3s ease;
 }
 
+/* See More Button Hover Effect */
 .seeMoreBtn:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 22px rgba(255, 0, 0, 0.4);
     color: #000000;
 }
-
+/* <-------------------------------------------------------------Footer-------------------------------------------------------------------> */
+/* A Common Style Code */
 /* Footer Section */
 footer {
     margin-top: 80px;
     background-color: #000;
     padding: 40px 60px;
 }
-  
+
+/*Container For all the Columns */
 .footerContainer {
     display: flex;
     flex-wrap: wrap;
@@ -428,10 +458,12 @@ footer {
     gap: 30px;
 }
 
+/* Column Flexibility */
 .footerColumn {
     flex: 1 1 180px;
 }
-  
+
+/* Column Header Styles*/
 .footerColumn h3 {
     color: red;
     border-bottom: 2px solid red;
@@ -439,7 +471,8 @@ footer {
     margin-bottom: 15px;
     font-size: 24px;
 }
-  
+
+/* Column texts are all links */
 .footerColumn a {
     display: block;
     color: white;
@@ -447,17 +480,20 @@ footer {
     margin-bottom: 8px;
     transition: all 0.3s ease;
 }
-  
+
+/* Text Hover Effects */
 .footerColumn a:hover {
     color: red;
 }
-  
+
+/* Image On the Right Side */
 .spiffoSection img {
     margin-top: 20px;
     height: 164px;
     cursor: pointer;
 }
-  
+
+/* Socials icons */
 .socialRow {
     width: 100%;
     display: flex;
@@ -465,7 +501,8 @@ footer {
     gap: 12px;
     transition: all 0.3s ease;
 }
-  
+
+/* Social Icons Size and Format*/
 .socialRow a img {
     height: 24px;
     width: 24px;
@@ -473,18 +510,21 @@ footer {
     transition: all 0.3s ease
 }
 
+/* Social Icons Hover Effect */
 .socialRow a img:hover{
     transform: scale(1.2);
     filter: invert(16%) sepia(84%) saturate(5941%) hue-rotate(358deg) brightness(105%) contrast(124%);
 }
-  
+
+/* Credits */
 .creditsRow {
     color: white;
     width: 100%;
     font-size: 16px;
 }
-
+/* <------------------------------------------------------------Game Page--------------------------------------------------------------------------> */
 /* The Game Page */
+/* Banners are also Common Style */
 .heroBanner {
     position: relative;
     width: 100%;
@@ -498,6 +538,7 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Background Image */
 .heroImg {
     width: 100%;
     height: 100%;
@@ -509,6 +550,7 @@ footer {
     z-index: 1;
 }
 
+/*Hero Text */
 .gameTitle {
     position: relative;
     z-index: 2;
@@ -518,12 +560,14 @@ footer {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
+/* Video Section */
 .gameVideo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
   
+/* Container For the Video */
 .videoContainer {
     width: 40%;
     aspect-ratio: 16 / 9;
@@ -534,19 +578,23 @@ footer {
     margin-bottom: 10px;
     transition: all 0.3s ease;
 }
-  
+
+/* I Frame Design */
 .videoContainer iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
 
+/* Video Hover Effect */
 .videoContainer:hover { 
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
     border-color: #f90000;
 }
 
+/* Features Section */
+/* Feature Heading Text Style */
 .featuresHeading {
     font-size: 40px;
     color: #ff0000;
@@ -556,6 +604,7 @@ footer {
     text-align: center;
 }
 
+/* Line Below the Heading */
 .featuresHeading::after {
     content: "";
     display: block;
@@ -566,6 +615,7 @@ footer {
     border-radius: 2px;
 }
 
+/* Cards are placed in a 2 items per row grid */
 .featuresGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -574,7 +624,8 @@ footer {
     margin: 0 auto;
     gap: 40px;
 }
-  
+
+/* Features Card Design */
 .featuresCard {
     background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
     border-radius: 8px;
@@ -586,28 +637,33 @@ footer {
     justify-content: space-between;
     text-align: left;
 }
-  
+
+/* Features Card Images Style */
 .featuresCard img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+/* Features Card Header Style */
 .featuresCard h3 {
     font-size: 24px;
     color: #ff0000;
     margin: 16px;
 }
 
+/* Line Under the Headers */
 .featuresCard h3::after {
     content: "";
     display: block;
+    margin-top: 2px;
     width: 120px;
     height: 2px;
     background: #ff0000;
     border-radius: 2px;
 }
 
+/* Features Card Paragraph Style */
 .featuresCard p {
     font-size: 16px;
     color: #ffffff;
@@ -615,10 +671,17 @@ footer {
     flex-grow: 1;
 }
 
+/* Features Card Hover Effect */
 .featuresCard:hover {
     box-shadow: 0 12px 25px rgba(255, 0, 0, 0.4);
 }
 
+/* Planned Features Section */
+.plannedFeatures{
+    margin-top: 80px;
+}
+
+/* Text Style for both Planned Features and How Its released Section */
 .sectionText {
     width: 60%;
     margin: auto;
@@ -626,18 +689,15 @@ footer {
     font-size: 16px;
     color: #ffffff;
     padding: 0 20 0 20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     line-height: 1.6;
 }
 
-.plannedFeatures{
-    margin-top: 80px;
-}
-
+/* Release Section Background */
 .releaseSection {
     position: relative;
-    margin-top: 100px;
-    margin-bottom: 180px;
+    margin-top: 80px;
+    margin-bottom: 130px;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -648,7 +708,8 @@ footer {
     background-position: center center;
     overflow: hidden;
 }
-  
+
+/* Applied an Overlay because the image is too bright */
 .releaseOverlay {
     position: absolute;
     top: 0;
@@ -658,7 +719,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
-  
+
+/* How It's Released Text Section  */
 .releaseContent {
     position: relative;
     z-index: 2;
@@ -667,6 +729,7 @@ footer {
     width: 100%;
 }
 
+/* <--------------------------------------------------------------News Page----------------------------------------------------------------------> */
 /* News Page */
 .newsTitle {
     position: relative;
@@ -677,17 +740,18 @@ footer {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
+/* The news card using a grid  */
 .newsContainerGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto 100px auto;
     box-sizing: border-box;
-  }
+}
   
-
+/* News Card Design */
 .NewsCard {
     background: linear-gradient(135deg, #1b1b1b, #111);
     border-radius: 16px;
@@ -696,13 +760,15 @@ footer {
     text-align: left;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease;
-  }
-  
+}
+
+/* News Card Hover Effect */
 .NewsCard:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
 }
-  
+
+/* News Card Image Format */
 .NewsCard img {
     width: 100%;
     height: 220px;
@@ -710,20 +776,22 @@ footer {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
-  
+
+/* News Card Link Format */
 .NewsCard a {
     text-decoration: none;
-    color: inherit;
     display: block;
 }
-  
+
+/* News Card Header */
 .NewsCard h3 {
     padding: 8px;
     font-size: 24px;
     margin-bottom: 8px;
     color: #ff0000;
 }
-  
+
+/* Line Under Header */
 .NewsCard h3::after {
     content: "";
     display: block;
@@ -733,7 +801,8 @@ footer {
     border-radius: 2px;
     margin-top: 2px;
 }
-  
+
+/* News Card Paragraph */
 .NewsCard p {
     font-size: 16px;
     color: #ffffff;
@@ -741,6 +810,7 @@ footer {
     margin-bottom: 16px;
 }
 
+/*Pages Format */
 .pagination {
     display: flex;
     justify-content: center;
@@ -749,7 +819,8 @@ footer {
     gap: 10px;
     flex-wrap: wrap;
   }
-  
+
+/*Page Link Format  */
 .pagination a {
     color: #fff;
     background-color: #262626;
@@ -759,15 +830,20 @@ footer {
     border-radius: 8px;
     transition: all 0.3s ease;
 }
-  
+
+/* Page Hover Effect */
   .pagination a:hover {
     background-color: #ff0000;
     color: #fff;
 }
-  
+
+/* Makes the Active Page Show */
 .pagination a.active {
     background-color: #ff0000;
     color: #fff;
     pointer-events: none;
     cursor: default;
 }
+
+
+/* <---------------------------------------------------------------Reviews Page--------------------------------------------------------------------> */
