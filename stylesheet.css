@@ -847,62 +847,92 @@ footer {
 
 
 /* <---------------------------------------------------------------Reviews Page--------------------------------------------------------------------> */
+/* Hero Section */
+.reviewsHero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+/* Background Image */
+.reviewsHero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* Hero overlay */
+.heroTextOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Hero paragraph */
+.heroTextOverlay p {
+    font-size: 20px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Review Container */
 .reviewsSection {
     max-width: 1100px;
     margin:auto;
     padding: 20px;
     color: #ffffff;
 }
-  
+
+/* Main Hero Title */
 .reviewsTitle {
     text-align: center;
-    font-size: 64px;
+    font-size: 72px;
     margin-bottom: 40px;
     color: #ff0000;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
 }
 
-.reviewsTitle::after {
-    content: "";
-    display: block;
-    width: 300px;
-    height: 4px;
-    background: #ff0000;
-    margin: 16px auto 0 auto;
-    border-radius: 2px;
-}
-  
+/* Review Cards are in a Grid */
 .reviewsGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-  
+
+/* Review Card Design */
 .reviewCard {
     background-color: #1a1a1a;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.6);
     transition: all 0.3s ease;
 }
-  
+
+/* Review Card Hover Effect */
 .reviewCard:hover {
     box-shadow: 0 13px 25px rgba(255, 0, 0, 0.4);
     transform: scale(1.02);
 }
-  
+
+/* Title for each review */
 .reviewTitle {
     font-size: 24px;
     margin-bottom: 10px;
     color: #ff0000;
 }
-  
+/* Star Rating  */
 .reviewRating {
     font-size: 24px;
     color: #f7c600;
     margin-bottom: 15px;
 }
-  
+
+/* Review Comments */
 .reviewText {
     font-size: 16px;
     color: #ffffff;
