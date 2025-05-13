@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews - Project Zomboid</title>
-    <link rel="shortcut icon" href="../imgs/spiffoLogo.png" type="image/x-icon">
-    <link rel="icon" href="../imgs/spiffoLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - Project Zomboid</title>
+  <link rel="shortcut icon" href="../imgs/spiffoLogo.png" type="image/x-icon">
+  <link rel="icon" href="../imgs/spiffoLogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../stylesheet.css">
 </head>
   <body>
+    <!-- Plays Audio If Allowed in the browser -->
+    <audio autoplay loop hidden>
+      <source src="../audio/ProjectZomboidThemeSong.mp3" type="audio/mpeg">
+    </audio>
     <!-- The header has 3 divs because it contains the logo(left) main navBar contents(middle) and social icons(right) -->
     <!-- This div serves as the container for all those divs -->
     <header class="navBar">
@@ -50,7 +54,7 @@
           </a>
         </div>    
       </header>
-
+    <!-- Section for the reviews Section Banner -->
     <section class="reviewsHero">
       <img src="../imgs/heroBg.png" alt="Player Reviews Hero Image">
       <div class="heroTextOverlay">
@@ -58,7 +62,8 @@
         <p>See what the players are saying about Project Zomboid.</p>
       </div>
     </section>
-
+    <!-- Reviews Section Grid -->
+     <!-- Cards are used to present the reviews  -->
     <section class="reviewsSection">
       <div class="reviewsGrid">
         <div class="reviewCard">
@@ -97,6 +102,7 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
       <div class="footerContainer">
         <!-- Explore Column -->

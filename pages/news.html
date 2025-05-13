@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="../stylesheet.css">
 </head>
   <body>
+    <!-- Plays Audio If Allowed in the browser -->
+    <audio autoplay loop hidden>
+      <source src="../audio/ProjectZomboidThemeSong.mp3" type="audio/mpeg">
+    </audio>
     <!-- The header has 3 divs because it contains the logo(left) main navBar contents(middle) and social icons(right) -->
     <!-- This div serves as the container for all those divs -->
     <header class="navBar">
@@ -58,9 +62,15 @@
           <h1 class="newsTitle">Project Zomboid News</h1>
         </div>
     </div>
-
+    <!-- Grid for the news section -->
     <section class="newsSection">
       <div class="newsContainerGrid">
+
+          <!-- News card are used to present the information -->
+         <!-- Card is wrapped around a link so when the user clicks it they go to the official news -->
+          <!-- Then Has an image and h3 tags for the headers -->
+           <!-- P tag for the news information -->
+            <!-- and a class news data for the news type and date -->
         <div class="NewsCard">
           <a href="https://projectzomboid.com/blog/news/2024/12/merry-christmas/" target="_blank">
             <img src="../imgs/christmas.png" alt="Merry Christmas">
@@ -71,7 +81,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="NewsCard">
           <a href="https://projectzomboid.com/blog/news/2024/12/build-42-unstable/" target="_blank">
             <img src="../imgs/b42Unstable.png" alt="Build 42 Unstable">
@@ -193,7 +203,8 @@
           </a>
       </div>
     </div>
-
+    
+    <!-- Pages -->
     <div class="pagination">
       <a href="#" class="prev">&laquo; Previous</a>
       <a href="#" class="active">1</a>

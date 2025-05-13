@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="../stylesheet.css">
 </head>
   <body>
+    <!-- Plays Audio If Allowed in the browser -->
+    <audio autoplay loop hidden>
+      <source src="../audio/ProjectZomboidThemeSong.mp3" type="audio/mpeg">
+    </audio>
     <!-- The header has 3 divs because it contains the logo(left) main navBar contents(middle) and social icons(right) -->
     <!-- This div serves as the container for all those divs -->
     <header class="navBar">
@@ -59,7 +63,7 @@
       </div>
     </div>
 
-  <!-- Game Video  -->
+  <!-- Game Video Embedded Using Youtube I frame -->
     <section class="gameVideo">
       <!-- Embedded YouTube Trailer -->
       <div class="videoContainer">
@@ -90,6 +94,7 @@
     </section>
 
     <!-- Game Features -->
+     <!-- Game Features Card Contains The Image, H2 Class for Header, and P for details -->
     <section class="featuresSection">
       <h2 class="featuresHeading">Current Game Features : B41</h2>
       <div class="featuresGrid">
@@ -147,8 +152,9 @@
     </section>
     
     <!-- How It's Released Section -->
+     <!-- Overlay is applied because the image is too bright -->
     <section class="releaseSection">
-      <div class="releaseOverlay"></div>
+      <div class="releaseOverlay"></div> 
       <div class="releaseContent">
         <h2 class="featuresHeading">How It's Released</h2>
         <p class="sectionText">
@@ -161,6 +167,7 @@
       </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
       <div class="footerContainer">
         <!-- Explore Column -->
